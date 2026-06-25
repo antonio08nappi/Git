@@ -1,12 +1,47 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
+    <title>Login - Acesse sua conta</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Login</h1>
-    <h2>Faça login para acessar sua conta</h2>
+    <div class="login-container">
+        <div class="login-card">
+            <div class="header">
+                <h1>Bem-vindo de volta!</h1>
+                <p>Faça login para acessar sua conta</p>
+            </div>
+
+            <form id="loginForm">
+                <div class="input-group">
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" placeholder="seu@email.com" required>
+                </div>
+
+                <div class="input-group">
+                    <label for="password">Senha</label>
+                    <input type="password" id="password" placeholder="••••••••" required>
+                </div>
+
+                <div class="options">
+                    <label class="checkbox">
+                        <input type="checkbox" id="remember">
+                        <span>Lembrar de mim</span>
+                    </label>
+                    <a href="#" class="forgot">Esqueci minha senha</a>
+                </div>
+
+                <button type="submit" class="btn-login">Entrar</button>
+            </form>
+
+            <div class="footer">
+                <p>Não tem uma conta? <a href="#" class="signup-link">Cadastre-se gratuitamente</a></p>
+            </div>
+        </div>
+    </div>
+
+    <script src=""></script>
 </body>
 </html>
